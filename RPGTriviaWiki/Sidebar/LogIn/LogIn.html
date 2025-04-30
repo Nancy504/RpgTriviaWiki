@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+     <!-- Character encoding and viewport settings for responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title -->
+    <title>RPG Trivia Wiki<</title>
+    <link rel="stylesheet" href="LogIn.css">
+    <!-- Google Fonts for custom typography -->
+    <link href='https://fonts.googleapis.com/css?family=Pixelify%20Sans' rel='stylesheet'>
+    <link href ='https://fonts.googleapis.com/css2?family=Poppins' rel='stylesheet'>
+    
+<body>
+    <!-- Main container for the login form -->
+    <div class="container">
+        <h2>Welcome!</h2>
+        <p class="detail">Please enter your details</p>
+        <!-- Google Sign-in Button -->
+        <button class="google-btn">
+            <img src="../../Images/Icons/Google-Symbol.png" alt="Google-Symbol.png">
+            Sign in with Google
+        </button> 
+        <hr>
+        <div class="separator">or</div>
+
+        <!-- Login form -->
+        <form id="loginForm">
+            <!-- Email input field -->
+            <label for="email">Email address</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <small class="error-message" id="emailError"></small>
+            <!-- Password input field with toggle button -->
+            <label for="password">Password</label>
+            <div class="password-container">
+                <input type="password" id="password" placeholder="Enter your password" required>
+                <button type="button" id="togglePassword" class="toggle-btn">👁</button>
+            </div>
+            <small class="error-message" id="passwordError"></small>
+            <!-- Remember Me checkbox -->
+            <div class="remember">
+                <input type="checkbox" id="rememberMe">
+                <label for="rememberMe">Remember for 30 days</label>
+            </div>
+
+             <!-- Login button -->
+            <button type="submit" class="log-in-btn">Log In</button>
+        </form>
+
+        <!-- Additional links for password reset and sign-in -->
+        <div class="links">
+            <a href="#">Forgot password?</a> | <a href="../../Sidebar/SignIn/Signin.html">Sign in</a>
+        </div>
+
+        <!-- Informational note for users -->
+        <p class="note">
+            The purpose of having an account is to comment and reply in the wiki. 
+            Only admins can edit wiki pages.
+        </p>
+
+        <!-- Footer section with copyright and validation links -->
+        <footer>
+            <p>
+               &copy; 2025 Pi 
+               <a href="https://validator.w3.org/">Validate HTML</a>
+               <a href="https://www.cssportal.com/css-validator">Validate CSS</a>
+            </p>
+         </footer>
+    </div>
+    <!-- Linking external JavaScript file for login functionality -->
+    <script src="LogIn.js"></script>
+</body>
+</html>

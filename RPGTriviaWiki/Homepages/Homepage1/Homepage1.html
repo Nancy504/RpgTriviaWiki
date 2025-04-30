@@ -1,0 +1,161 @@
+<!-- Declares the document type and sets the language to English -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Meta information for character encoding and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Trivia Wiki</title>
+    <!-- Linking external CSS file for styling -->
+    <link rel="stylesheet" href="Homepage1.css">
+    <link href='https://fonts.googleapis.com/css?family=Pixelify%20Sans' rel='stylesheet'>
+</head>
+<body>
+    <!-- Sidebar Section -->
+    <div class="sidebar">
+        <!-- Logo and Home Link -->
+        <a href="Homepage1.html" class="account-link">
+            <div class="logo-container">
+            <img src="../../Images/Icons/Logo.png" alt="RPG Trivia Wiki Logo.png" id="logo">
+            <h1>RPG TRIVIA WIKI</h1>
+            </div>
+        </a>
+        <!-- Search Bar -->
+
+        <input type="text" id="searchInput" placeholder="Search..." class="search-bar">
+         
+
+        <!-- Navigation Buttons -->
+        <button data-href="../../Sidebar/AboutUs/AboutUs.html" onclick="navigate('../../Sidebar/AboutUs/AboutUs.html')">About Us</button>
+        <button data-href="../../Sidebar/SupportandSocial/SupportandSocial.html" onclick="navigate('../../Sidebar/SupportandSocial/SupportandSocial.html')">Social and Support</button>
+        <button data-href="../../Sidebar/LogIn/LogIn.html" onclick="navigate('../../Sidebar/LogIn/LogIn.html')">Log In</button>
+        <button data-href="../../Sidebar/SignIn/SignIn.html" onclick="navigate('../../Sidebar/SignIn/SignIn.html')">Sign In</button>        
+         <!-- User Profile Section -->
+        <a href="profile.html" class="account-link">
+            <div class="account">
+                <img src="../../Images/Icons/cloud.png" alt="cloud.png">
+                <p>Cloudfan04</p>
+                <p>joshua_nile@gmail.com</p>
+            </div>
+        </a>
+    
+    </div>
+        <!-- Main Content Section -->
+        <div class="main-content">
+            <div class="container-wrapper">
+                 <!-- Filter Tags Section -->
+                <div class="First-Container">
+                    <a id="Filter-Title">
+                        <p>
+                            Filter Tags
+                        </p>
+                    </a>
+                    <div class="custom-combobox-container">
+                        <div class="custom-combobox" onclick="showOptions('options1')">
+                            <input type="text" id="inputCheckbox1" readonly>
+                            <a href="#">&#128270;</a>
+                        </div>
+                        <div class="options-container" id="options1" onmouseleave="hideOptions('options1')">
+                            <label for="2-D"> <input type="checkbox" id="2-D" value="2-D"> 2-D </label>
+                            <label for="3-D"> <input type="checkbox" id="3-D" value="3-D"> 3-D </label>
+                            <label for="Action"> <input type="checkbox" id="Action" value="Action"> Action </label>
+                            <label for="Adventure"> <input type="checkbox" id="Adventure" value="Adventure"> Adventure </label>
+                            <label for="Auto-game"> <input type="checkbox" id="Auto-game" value="Auto-game"> Auto-game </label>
+                            <label for="Battle-Royale"> <input type="checkbox" id="Battle-Royale" value="Battle-Royale"> Battle-Royale </label>
+                            <label for="Beat-'em-up"> <input type="checkbox" id="Beat-'em-up" value="Beat-'em-up"> Beat-'em-up </label>
+                            <label for="Bullet-game"> <input type="checkbox" id="Bullet-game" value="Bullet-game"> Bullet-game </label>
+                            <label for="Civilization"> <input type="checkbox" id="Civilization" value="Civilization"> Civilization </label>
+                            <label for="Class-Based"> <input type="checkbox" id="Class-Based" value="Class-Based"> Class-Based </label>
+                            <label for="Comedy"> <input type="checkbox" id="Comedy" value="Comedy"> Comedy </label>
+                            <label for="Cozy"> <input type="checkbox" id="Cozy" value="Cozy"> Cozy </label>
+                            <label for="Crafting"> <input type="checkbox" id="Crafting" value="Crafting"> Crafting </label>
+                            <label for="Cyberpunk"> <input type="checkbox" id="Cyberpunk" value="Cyberpunk"> Cyberpunk </label>                           
+                            <label for="Dating-Sim"> <input type="checkbox" id="Dating-Sim" value="Dating-Sim"> Dating-Sim </label>
+                            <label for="Death-Games"> <input type="checkbox" id="Death-Games" value="Death-Games"> Death-Games </label> 
+                            <label for="Dungeon-Crawl"> <input type="checkbox" id="Dungeon-Crawl" value="Dungeon-Crawl"> Dungeon-Crawl </label> 
+                            <label for="Dystopian"> <input type="checkbox" id="Dystopian" value="Dystopian"> Dystopian </label>
+                            <label for="Fantasy"> <input type="checkbox" id="Fantasy" value="Fantasy"> Fantasy </label>
+                            <label for="Farming"> <input type="checkbox" id="Farming" value="Farming"> Farming </label>
+                            <label for="Fighting"> <input type="checkbox" id="Fighting" value="Fighting"> Fighting </label>
+                            <label for="Gacha"> <input type="checkbox" id="Gacha" value="Gacha"> Gacha </label>
+                            <label for="Gothic"><input type="checkbox" id="Gothic" value="Gothic"> Gothic </label>
+                            <label for="Hack-and-Slash"> <input type="checkbox" id="Hack-and-Slash" value="Hack-and-Slash"> Hack-and-Slash </label>
+                            <label for="Horror"> <input type="checkbox" id="Horror" value="Horror"> Horror </label>
+                            <label for="Idle"> <input type="checkbox" id="Idle" value="Idle"> Idle </label>
+                            <label for="lgbtq+"> <input type="checkbox" id="lgbtq+" value="lgbtq+"> lgbtq+ </label>
+                            <label for="Life-Sim"> <input type="checkbox" id="Life-Sim" value="Life-Sim"> Life-Sim </label>                            
+                            <label for="Magical-Girl"> <input type="checkbox" id="Magical-Girl" value="Magical-Girl"> Magical-Girl </label>
+                            <label for="Monster-Tamer"> <input type="checkbox" id="Monster-Tamer" value="Monster-Tamer"> Monster-Tamer </label>
+                            <label for="Mecha"> <input type="checkbox" id="Mecha" value="Mecha"> Mecha </label>
+                            <label for="Metroidvania"> <input type="checkbox" id="Metroidvania" value="Metroidvania"> Metroidvania </label>
+                            <label for="MMO"> <input type="checkbox" id="MMO" value="MMO"> MMO </label>
+                            <label for="Multiplayer"> <input type="checkbox" id="Multiplayer" value="Multiplayer"> Multiplayer </label>
+                            <label for="Network"> <input type="checkbox" id="Network" value="Network"> Network </label>
+                            <label for="Otome"> <input type="checkbox" id="Otome" value="Otome"> Otome </label>
+                            <label for="Platform"> <input type="checkbox" id="Platform" value="Platform"> Platform </label>
+                            <label for="Puzzle"> <input type="checkbox" id="Puzzle" value="Puzzle"> Puzzle </label>
+                            <label for="Real-Time-Strategy"> <input type="checkbox" id="Real-Time-Strategy" value="Real-Time-Strategy"> Real-Time-Strategy </label>
+                            <label for="Rhythm"> <input type="checkbox" id="Rhythm" value="Rhythm"> Rhythm </label>
+                            <label for="Roguelike"> <input type="checkbox" id="Roguelike" value="Roguelike"> Roguelike </label>
+                            <label for="Sandbox"> <input type="checkbox" id="Sandbox" value="Sandbox"> Sandbox </label>
+                            <label for="Sci-Fi"> <input type="checkbox" id="Sci-Fi" value="Sci-Fi"> Sci-Fi </label>
+                            <label for="Side-Scroller"> <input type="checkbox" id="Side-Scroller" value="Side-Scroller"> Side-Scroller </label>
+                            <label for="Simulation"> <input type="checkbox" id="Simulation" value="Simulation"> Simulation </label>
+                            <label for="Stealth"> <input type="checkbox" id="Stealth" value="Stealth"> Stealth </label>
+                            <label for="Strategy"> <input type="checkbox" id="Strategy" value="Strategy"> Strategy </label>
+                            <label for="Survival"> <input type="checkbox" id="Survival" value="Survival"> Survival </label>
+                            <label for="Tower-Defense"> <input type="checkbox" id="Tower-Defense" value="Tower-Defense"> Tower-Defense </label>
+                            <label for="Turn-Based"> <input type="checkbox" id="Turn-Based" value="Turn-Based"> Turn-Based </label>
+                            <label for="Visual-Novel"> <input type="checkbox" id="Visual-Novel" value="Visual-Novel"> Visual-Novel </label>
+                            <label for="Walking-Simulator"> <input type="checkbox" id="Walking-Simulator" value="Walking-Simulator"> Walking-Simulator </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Order Filter Section -->
+                <div class="Second-Container">
+                    <a id="Order-Title">
+                        <p>Order Filter</p>
+                    </a>
+                    <div class="custom-combobox-container">
+                        <div class="custom-combobox" onclick="showOptions('options2')">
+                            <input type="text" id="inputCheckbox2" readonly>
+                            <a href="#">&#128270;</a>
+                        </div>
+                        <div class="options-container" id="options2" onmouseleave="hideOptions('options2')">
+                            <label for="A-Z(ASCENDING)"> <input type="checkbox" id="A-Z(ASCENDING)" value="A-Z(ASCENDING)"> A-Z(ASCENDING) </label>
+                            <label for="Z-A(DESCENDING)"> <input type="checkbox" id="Z-A(DESCENDING)" value="Z-A(DESCENDING)"> Z-A(DESCENDING) </label>
+                            <label for="DATE(ASCENDING)"> <input type="checkbox" id="DATE(ASCENDING)" value="DATE(ASCENDING)"> Date(ASCENDING) </label>
+                            <label for="DATE(DESCENDING)"> <input type="checkbox" id="DATE(DESCENDING)" value="DATE(DESCENDING)"> Date(DESCENDING) </label>
+                        </div>
+                    </div>
+                </div>        
+            </div>    
+            <br>
+            
+            <div id="gameContainer">
+                <!-- Game Grid Section -->
+                <div class="game-grid"></div>
+
+                <!-- Pagination Section -->
+                 <div class="pagination" id="pagination"></div>
+            </div>
+
+
+
+            <!-- Footer Section -->
+            <footer>
+                <p>
+                    &copy; 2025 Pi 
+                    <a href="https://validator.w3.org/">Validate HTML</a>
+                    <a href="https://www.cssportal.com/css-validator">Validate CSS</a>
+                </p>
+            </footer>
+    </div>
+    <!-- make preview appear when mouse hovers -->
+    <div id="link-preview">
+        <iframe id="preview-frame"></iframe>
+    </div>
+  <!-- Link to External JavaScript File -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="Homepage1.js"></script>  
+</html>

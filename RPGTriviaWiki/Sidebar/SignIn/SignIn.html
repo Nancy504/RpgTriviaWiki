@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Trivia Wiki<</title>
+     <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="SignIn.css">
+    <!-- Google Fonts for styling -->
+    <link href='https://fonts.googleapis.com/css?family=Pixelify%20Sans' rel='stylesheet'>
+    <link href ='https://fonts.googleapis.com/css2?family=Poppins' rel='stylesheet'>
+    
+<body>
+    <div class="container">
+        <!-- Page title and introduction text -->
+        <h2>Welcome!</h2>
+        <p class="detail">Please enter your details</p>
+        <!-- Google Sign-in button -->
+        <button class="google-btn">
+            <img src="../../Images/Icons/Google-Symbol.png" alt="Google-Symbol.png">
+            Sign in with Google
+        </button> 
+        <hr>
+        <div class="separator">or</div>
+
+         <!-- Sign-in form -->
+        <form id="signinForm">
+            <!-- Email input field -->
+            <label for="email">Email address</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <small class="error-message" id="emailError"></small>
+
+            <!-- Password input field with visibility toggle -->
+            <label for="password">Password</label>
+            <div class="password-container">
+                <input type="password" id="password" placeholder="Enter your password" required>
+                <button type="button" id="togglePassword" class="toggle-btn">👁</button>
+            </div>
+            <small class="error-message" id="passwordError"></small>
+
+             <!-- Confirm Password input field with visibility toggle -->
+            <label for="ConfirmPassword">Confirm Password</label>
+            <div class="Re-password-container">
+                <input type="password" id="ConfirmPassword" placeholder="Re-enter your password" required>
+                <button type="button" id="togglerePassword" class="toggle-btn">👁</button>
+            </div>
+            <small class="error-message" id="confirmPasswordError"></small>
+
+            <!-- Remember Me checkbox -->
+            <div class="remember">
+                <input type="checkbox" id="rememberMe">
+                <label for="rememberMe">Remember for 30 days</label>
+            </div>
+
+            <!-- Sign-in button -->
+            <button type="submit" class="sign-in-btn">Sign In</button>
+        </form>
+
+        <!-- Additional links for password recovery and login -->
+        <div class="links">
+            <a href="#">Forgot password?</a> | <a href="../../Sidebar/LogIn/Login.html">Log in</a>
+        </div>
+
+        <!-- Note explaining the purpose of an account -->
+        <p class="note">
+            The purpose of having an account is to comment and reply in the wiki. 
+            Only admins can edit wiki pages.
+        </p>
+         <!-- Footer with copyright and validation links -->
+        <footer>
+            <p>
+               &copy; 2025 Pi 
+               <a href="https://validator.w3.org/">Validate HTML</a>
+               <a href="https://www.cssportal.com/css-validator">Validate CSS</a>
+            </p>
+         </footer>
+    </div>
+    <!-- Link to external JavaScript file -->
+    <script src="SignIn.js"></script>   
+</body>
+</html>

@@ -1,0 +1,139 @@
+/* Reset default margin, padding, and set box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* Body styling with a background image */
+body {
+    background: url('../../Images/Background/TrailsInTheSkyPoster.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* General text color for details */
+.detail{
+    color: white;
+}
+/* Main container styling */
+.container {
+    background: rgba(70, 130, 250, 0.692);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+/* Heading style */
+h2 {
+    font-weight: 600;
+    color: white;
+}
+
+/* Google Sign-In Button */
+.google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin: 10px 0;
+}
+/* Google Icon inside the button */
+.google-btn img {
+    width: 20px;
+    margin-right: 10px;
+}
+/* Separator text style */
+.separator {
+    margin: 10px 0;
+    font-size: 14px;
+}
+/* Form container */
+form {
+    display: flex;
+    flex-direction: column;
+}
+/* Label styling */
+label {
+    text-align: left;
+    font-size: 14px;
+    margin-top: 10px;
+    color: white;
+}
+/* Input fields */
+input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+/* Error message styling */
+.error-message {
+    color: red;
+    font-size: 12px;
+    text-align: left;
+}
+/* Password container for toggling visibility */
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+/* Toggle password visibility button */
+.toggle-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    font-size: 1.2em;
+}
+/* Remember me checkbox container */
+.remember {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+/* Space between checkbox and label */
+.remember input {
+    margin-right: 5px;
+}
+/* Log-in button styling */
+.log-in-btn {
+    background: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+/* Additional links (e.g., Forgot password, Sign up) */
+.links {
+    margin-top: 10px;
+    font-size: 14px;
+}
+/* Styling for links */
+.links a {
+    color: white;
+    text-decoration: none;
+}
+/* Small note text */
+.note {
+    font-size: 12px;
+    margin-top: 10px;
+    color:white;
+}
+/* Footer styling */
+footer{
+    background-color: white;
+}

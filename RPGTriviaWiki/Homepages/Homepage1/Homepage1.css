@@ -1,0 +1,243 @@
+/* General Reset and Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+/* Body Styling */
+body {
+    display: flex;
+    margin: 0;
+    background-image: url("../../Images/Background/mainBackground.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    background-image: url("../../Images/Background/sidebarBackground.png");
+    background-repeat: repeat-y;
+    background-position: center;
+    color:white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+/* Logo Styling */
+.logo-container {
+    text-align: center;
+}
+#logo {
+    width: 80px;
+    transition: transform 0.5s ease-in-out;
+}
+#logo:hover {
+    transform: rotate(360deg);
+}
+/* Search Bar Styling */
+.search-bar {
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0;
+}
+/* Button Styling */
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+/* Account Link Styling */
+.account-link {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Keeps text color unchanged */
+    display: block; /* Makes the entire div clickable */
+}
+/* Account Box Styling */
+.account {
+    text-align: center;
+    margin-top: 20px;
+    background-origin: content-box;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 50, 0.8);
+    padding: 10px;
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    transition: background 0.3s ease-in-out;
+}
+
+.account:hover {
+    background-color: rgba(0, 0, 80, 0.8); /* Slightly lighter blue on hover */
+}
+/* Main Content Styling */
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+/* Layout for Containers */
+.container-wrapper {
+    display: flex;
+    gap: 40px; /* Space between containers */
+}
+/* Titles Styling */
+#Filter-Title{
+    color:white
+}
+#Order-Title{
+    color:white
+}
+/* First and Second Container Styling */
+.First-Container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 350px;
+
+}
+.Second-Container{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 350px;
+
+}
+/* Custom Combobox Styling */
+.custom-combobox-container {
+    position: relative;
+    width: 100%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.custom-combobox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(199, 199, 199);
+    padding: 10px;
+    background-color: white;
+}
+.custom-combobox input[type="text"] {
+    width: 95%;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+/* Options Container for Dropdown */
+.options-container {
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    border: 1px solid rgb(204, 204, 204);
+    border-top: none;
+    display: none;
+    height: 150px;
+    overflow-y: scroll;
+    background-color: white;
+}
+.options-container label {
+    display: block;
+    cursor: pointer;
+    padding: 5px;
+    margin-top: 5px;
+    user-select: none;
+}
+.options-container label:hover {
+    background: rgb(201, 201, 201);
+}
+
+/* game-grid and item stylings */
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto); /* Optional: if height consistency is needed */
+    gap: 1rem; /* Or adjust spacing */
+    max-width: 100%;
+}
+
+.game-item {
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.game-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.game-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.game-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px 5px rgba(0, 255, 255, 0.6); /* glowing effect */
+}
+
+.game-item p {
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Mouse hovering over link stlying */
+#link-preview {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    width: 800px;
+    height: 650px;
+    transform: scale(0.4);
+    border: 2px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    transform-origin: top left;
+    background: white;
+}
+
+#preview-frame {
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Disable interactions */
+}
+
+/*pagination styling*/
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+.pagination a {
+    margin: 2px;
+    padding: 2px 10px;
+    text-decoration: none;
+    background: #eeeeee65;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.pagination a.active {
+    background: #0d48a147;
+    color: #fff202ac;
+}
+
+.pagination a:hover {
+    background: #0d48a147;
+    color: white;
+}
+/* Footer Styling */
+footer{
+    background-color: white;
+}

@@ -1,0 +1,472 @@
+/* Reset default margins, padding, and set global font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+/* body styling */
+body {
+    display: flex;
+    color: #f5f5f5;
+    background-image: url("../../../../Images/Background/mainBackground.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    background-image: url("../../../../Images/Background/sidebarBackground.png");
+    background-repeat: repeat-y;
+    background-position: center;
+    color:white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+/* Back to top button */
+#backToTop {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px; 
+    height: 50px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    opacity: 0; /* Initially hidden */
+}
+/* Button hover effect */
+#backToTop:hover {
+    background-color: #333;
+    transform: scale(1.1);
+}
+/* Logo container */
+.logo-container {
+    text-align: center;
+}
+/* Logo styling with animation */
+#logo {
+    width: 80px;
+    transition: transform 0.5s ease-in-out;
+}
+#logo:hover {
+    transform: rotate(360deg);
+}
+/* Button styling */
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+/* Account section styling */
+.account-link {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Keeps text color unchanged */
+    display: block; /* Makes the entire div clickable */
+}
+.account {
+    text-align: center;
+    margin-top: 20px;
+    background-origin: content-box;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 50, 0.8);
+    padding: 10px;
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    transition: background 0.3s ease-in-out;
+}
+.account:hover {
+    background-color: rgba(0, 0, 80, 0.8); /* Slightly lighter blue on hover */
+}
+/* Main content area */
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+/* Image header */
+.header img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+/* Work in progress and quote block section */
+.work-in-progress {
+    background-color: rgb(70, 130, 250);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.quote-container {
+    background-color: rgb(70, 130, 250);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.quote-container img {
+    width: 100px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.quick-links {
+    background-color: rgb(70, 130, 250);
+    width: 200px;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    border: 2px solid #4a4a4a;
+    margin-right: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+/* Quick links styling */
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+}
+.quick-links li {
+    padding: 5px 0;
+}
+.quick-links a {
+    color: #bbb;
+    text-decoration: none;
+}
+.quick-links a:hover {
+    color: white;
+    text-decoration: underline;
+}
+/* Infobox styling */
+.info-caption
+{
+    font-size: 12px;
+}
+.infobox {
+    background-color: rgb(70, 130, 250);
+    width: 280px;
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+    border: 2px solid #4a4a4a;
+    margin-right: 50px;
+    margin-top: 300px; /* Moves the infobox lower */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    max-height: 500px; /* Limits the height */
+    overflow-y: auto; /* Enables scrolling if content overflows */
+}
+.infobox img {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #555;
+}
+/* Content styling */
+.content {
+    max-width: 800px;
+    margin-left: 20px;
+}
+.content h2 {
+    font-size: 24px;
+}
+.content hr {
+    border: 1px solid white;
+    margin: 10px 0;
+}
+.content p {
+    font-size: 16px;
+}
+/* container postion and margin */
+.container h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+/* character table styling */
+.character-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgb(70, 130, 250); /* Deep blue background */
+    border: 2px solid white;
+}
+.character-table td {
+    padding: 15px;
+    border: 2px solid white;
+}
+.char-img {
+    width: 150px;
+    text-align: center;
+}
+.char-img img {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 5px;
+}
+.char-info {
+    color: white;
+    font-size: 16px;
+}
+.char-info h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: white;
+}
+/* gallery styling */
+.gallery {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+.gallery figure {
+    width: 150px;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.gallery a{
+    color: #bbb;
+    text-decoration: none;
+}
+.gallery a:hover {
+    color: white;
+    text-decoration: underline;
+}
+.zoom-modal {
+    display: none; /* Ensures modal is hidden initially */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Hide close button until modal is displayed */
+.zoom-modal.hidden {
+    display: none !important;
+}
+
+/* Improved Image Scaling (Prevents Cutoff) */
+.zoom-modal img {
+    max-width: 90%;
+    max-height: 90vh; /* Prevents image from exceeding viewport height */
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+/* Ensures text is readable and positioned properly */
+.zoom-modal a {
+    color: #bbb;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
+
+.zoom-modal a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Close Button Styling (Hidden by default) */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 40px;
+    cursor: pointer;
+    color: white;
+    background: none;
+    border: none;
+    display: none; /* Hides close button initially */
+}
+
+/* Show close button when modal is visible */
+.zoom-modal.show .close {
+    display: block;
+}
+
+/* Show close button only when modal is open */
+.zoom-modal[style*="display: flex"] .close {
+    display: block;
+}
+/* Helps postion the bulletin */
+ul {
+    padding-left: 20px; /* Adjust as needed */
+    margin-left: 0; /* Remove extra margin */
+    list-style-position: inside; /* Ensures bullet is inside the container */
+}
+li {
+    word-wrap: break-word; /* Prevents text from overflowing */
+    overflow-wrap: break-word;
+}
+/* reference styling */
+.reference-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.reference-container a {
+    color: #bbb;
+    text-decoration: none;
+}
+.reference-container a:hover {
+    text-decoration: underline;
+    color:white;
+}
+.reference-container {
+    max-height: 180px; /* Shows approximately 6 items before scrolling */
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+/* container styling */
+.container{
+    background-origin: content-box;
+    color:white;
+    background-color: rgba(70, 130, 250, 0.692);
+    
+}
+/*Styling for video*/
+#myVideo {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* discussion board styling */
+.discussion-board {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(70, 130, 250, 0.692);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+textarea {
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #0d47a1;
+}
+.post {
+    background: #bbdefb;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+.options {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+/* option menu styling */
+.options-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    background: rgba(70, 130, 250, 0.692);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.options-menu button {
+    display: block;
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 5px;
+    text-align: left;
+    cursor: pointer;
+}
+/* Mouse hovering over link stlying */
+#link-preview {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    width: 800px;
+    height: 650px;
+    transform: scale(0.4);
+    border: 2px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    transform-origin: top left;
+    background: white;
+}
+
+#preview-frame {
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Disable interactions */
+}
+/* reply styling */
+.replies-container {
+    margin-top: 5px;
+    padding-left: 15px;
+    border-left: 2px solid #0d47a1;
+    display: block; /* Ensure replies are always visible */
+}
+.reply textarea {
+    width: 100%;
+    height: 40px;
+}
+.post-text {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.reply-message {
+    background: #90caf9;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    position: relative;
+}
+.replies-container {
+    margin-top: 5px;
+    padding-left: 15px;
+    border-left: 2px solid #0d47a1;
+}
+/* footer styling */
+footer{
+    background-color: white;
+}

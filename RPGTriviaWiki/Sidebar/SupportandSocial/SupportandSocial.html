@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Trivia Wiki</title>
+    <!-- Linking external stylesheet -->
+    <link rel="stylesheet" href="SupportandSocial.css">
+    <!-- Importing external font -->
+    <link href='https://fonts.googleapis.com/css?family=Pixelify%20Sans' rel='stylesheet'>
+</head>
+<body>
+    <!-- Sidebar navigation -->
+    <div class="sidebar">
+        <!-- Logo and Homepage link -->
+        <a href="../../Homepages/Homepage1/Homepage1.html" class="account-link">
+            <div class="logo-container">
+            <img src="../../Images/Icons/Logo.png" alt="RPG Trivia Wiki Logo.png" id="logo">
+            <h1>RPG TRIVIA WIKI</h1>
+            </div>
+        </a>
+
+        <!-- Sidebar navigation buttons -->
+        <button data-href="../../Sidebar/AboutUs/AboutUs.html" onclick="navigate('../../Sidebar/AboutUs/AboutUs.html')">About Us</button>
+        <button data-href="../../Sidebar/SupportandSocial/SupportandSocial.html" onclick="navigate('../../Sidebar/SupportandSocial/SupportandSocial.html')">Social and Support</button>
+        <button data-href="../../Sidebar/LogIn/LogIn.html" onclick="navigate('../../Sidebar/LogIn/LogIn.html')">Log In</button>
+        <button data-href="../../Sidebar/SignIn/SignIn.html" onclick="navigate('../../Sidebar/SignIn/SignIn.html')">Sign In</button>  
+         <!-- User profile section -->
+        <a href="profile.html" class="account-link">
+            <div class="account">
+                <img src="../../Images/Icons/cloud.png" alt="cloud.png">
+                <p>Cloudfan04</p>
+                <p>joshua_nile@gmail.com</p>
+            </div>
+        </a>
+    </div>
+     <!-- Main content section -->
+     <div class="main-content">
+        <div class="container">
+            <h1>Support and Social</h1>
+            <br>
+            <h2>Socials</h2>
+            <!-- Social media links with icons -->
+            <a href="https://x.com/unccharlotte?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Twitter</a>
+            <img src="../../Images/Icons/TwitterIcon.png" alt="TwitterIcon.png">
+            <br>
+            <a href="https://www.facebook.com/UNCCharlotte/">Facebook</a>
+            <img src="../../Images/Icons/FacebookIcon.png" alt="FacebookIcon.png">
+            <br>
+            <a href="https://www.linkedin.com/school/unc-charlotte/posts/?feedView=all">Linkedin</a>
+            <img src="../../Images/Icons/LinkedinIcon.png" alt="LinkedinIcon.png">
+            <br>
+            <a href="https://www.youtube.com/user/unccharlottevideo">Youtube</a>
+            <img src="../../Images/Icons/YoutubeIcon.png" alt="/YoutubeIcon.png">
+            <br>
+            <br>
+            <h2>Donate</h2>
+            <!-- Donation and resource links -->
+            <a href="https://www.thehotline.org">Domestic Abuse Resource</a>
+            <br>
+            <a href="https://sprc.org">Suicide Prevention Resource</a>
+            <br>
+            <a href="https://www.samhsa.gov">Samhsa</a>
+            <br>
+            <a href="https://glaad.org/resourcelist/">LGBTQ Resource List</a>
+            
+            <form id="DomesticAbuseResource-donation-form">
+                <input type="text" name="name" placeholder="Your Name">
+                <input type="email" name="email" placeholder="Email">
+                <button type="submit">Pledge Donation Domestic Abuse Resource</button>
+            </form>
+            <div id="response-domestic"></div>
+            
+            <form id="SuicidePreventionResource-donation-form">
+                <input type="text" name="name" placeholder="Your Name">
+                <input type="email" name="email" placeholder="Email">
+                <button type="submit">Pledge Donation Suicide Prevention Resource</button>
+            </form>
+            <div id="response-suicide"></div>
+            
+            <form id="Samhsa-donation-form">
+                <input type="text" name="name" placeholder="Your Name">
+                <input type="email" name="email" placeholder="Email">
+                <button type="submit">Pledge Donation Samhsa</button>
+            </form>
+            <div id="response-samhsa"></div>
+            
+            <form id="LGBTQResourceList-donation-form">
+                <input type="text" name="name" placeholder="Your Name">
+                <input type="email" name="email" placeholder="Email">
+                <button type="submit">Pledge Donation LGBTQ Resource List</button>
+            </form>
+            <div id="response-lgbtq"></div>
+
+    </div>
+    <footer>
+        <!-- Footer section -->
+        <p>
+            &copy; 2025 Pi 
+            <a href="https://validator.w3.org/">Validate HTML</a>
+            <a href="https://www.cssportal.com/css-validator">Validate CSS</a>
+        </p>
+    </footer>
+    </div>
+<!-- Linking external JavaScript file -->
+<script src="SupportandSocial.js"></script>
+</body>
+</html>
